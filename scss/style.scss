@@ -3,3 +3,9 @@
 @import "index";
 @import "servicios";
 @import "contacto";
+
+h1 {
+  font-size: $title;
+  text-align: center;
+  margin: 1rem;
+}
