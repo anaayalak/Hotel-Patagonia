@@ -7,13 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Patagonia</title>
     <link rel="shortcut icon" href="./images/icon/Hotel Patagonia-icono.png">
-    <!-- FONT AWESOME -->   
-<script
-src="https://kit.fontawesome.com/d9763ca274.js"
-crossorigin="anonymous"
-></script>
-<!-- GOOGLE FONTS -->
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/d9763ca274.js" crossorigin="anonymous"></script>
+    <!-- GOOGLE FONTS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
     <!-- CSS BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
@@ -22,6 +21,7 @@ crossorigin="anonymous"
 </head>
 
 <body>
+    <header>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
@@ -56,38 +56,40 @@ crossorigin="anonymous"
             </div>
         </div>
     </nav>
-    <main class="container">
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="./images/hotel.jpg" class="d-block w-100" alt="frente del hotel.">
-                    <div class="carousel-caption d-none d-md-block">
-                        <p>A orillas del Lago Nahuel Huapi, rodeado de la majestuosa cordillera de los Andes, una suite acogedora aguarda tu visita..</p>
-                    </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <img src="./images/comedor hotel.jpg" class="d-block w-100" alt="comedor del hotel">
-                </div>
-                <div class="carousel-item">
-                    <img src="./images/hotel vista lago.jpg" class="d-block w-100" alt="ventanal con vista al lago">
+    <div id="carouselExampleInterval" class="carousel slide container" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./images/hotel.jpg" class="d-block w-100" alt="frente del hotel.">
+                <div class="carousel-caption d-none d-md-block">
+                    <p>A orillas del Lago Nahuel Huapi, rodeado de la majestuosa cordillera de los Andes, una suite
+                        acogedora aguarda tu visita..</p>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Siguiente</span>
-            </button>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="./images/comedor hotel.jpg" class="d-block w-100" alt="comedor del hotel">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/hotel vista lago.jpg" class="d-block w-100" alt="ventanal con vista al lago">
+            </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+</header>
+    <main class="container">
         <div class="booking-container">
             <form action="" class="row align-content-center justify-content-center">
                 <div class="col-auto">
                     <label for="llegada">Fecha de llegada:</label>
-                    <input type="date" name="llegada" id="llegada"class="form-control">
+                    <input type="date" name="llegada" id="llegada" class="form-control">
                 </div>
                 <div class="col-auto">
                     <label for="salida">Fecha de salida:</label>
@@ -123,35 +125,37 @@ crossorigin="anonymous"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </main>
-        <footer class="bg-dark text-center text-white">
-            <!-- Grid container -->
-            <div class="container p-4 pb-0">
-                <div class="mb-4 mb-md-0">
-                    <p>Direccion: San Martín 536 70, R8400 San Carlos de Bariloche, Río Negro</p>
-                    <p>Telefono: 0294-440-9200</p>
-                    <p>Email: reservas@hotelpatagonia.com</p>
-                </div>
-                <!-- Section: Social media -->
-                <section class="mb-4 mb-md-0">
-                    <!-- Facebook -->
-                    <a class="btn btn-outline-light btn-floating m-1" href="https://es-la.facebook.com/" target="_blank"
-                        role="button"><i class="fab fa-facebook-f"></i></a>
-                    <!-- Instagram -->
-                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" target="_blank"
-                        role="button"><i class="fab fa-instagram"></i></a>
-                </section>
-                <!-- Section: Social media -->
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <div class="mb-4 mb-md-0">
+                <p>Direccion: San Martín 536 70, R8400 San Carlos de Bariloche, Río Negro</p>
+                <p>Telefono: 0294-440-9200</p>
+                <p>Email: reservas@hotelpatagonia.com</p>
             </div>
-            </div>
-            <!-- Grid container -->
-            <!-- Copyright -->
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                © 2022 Copyright: Ana Ayala
-            </div>
-            <!-- Copyright -->
-        </footer>
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+            <!-- Section: Social media -->
+            <section class="mb-4 mb-md-0">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://es-la.facebook.com/" target="_blank"
+                    role="button"><i class="fab fa-facebook-f"></i></a>
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" target="_blank"
+                    role="button"><i class="fab fa-instagram"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        </div>
+        <!-- Grid container -->
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright: Ana Ayala
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
