@@ -1,11 +1,7 @@
-@import "globals";
 @import "variables";
+@import "mixin";
+@import "globals";
 @import "index";
 @import "servicios";
 @import "contacto";
-
-h1 {
-  font-size: $title;
-  text-align: center;
-  margin: 1rem;
-}
+@import "hotel";

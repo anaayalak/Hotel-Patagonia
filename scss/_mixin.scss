@@ -1,0 +1,6 @@
+@mixin text-size($font-size) {
+  color: map-get($colors, color-blue);
+  text-align: center;
+  font-weight: bold;
+  font-size: $font-size;
+}

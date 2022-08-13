@@ -8,7 +8,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  background-color: #bfbfbf;
+  background-color: map-get($colors, color-grey);
   font-size: 1.7rem;
   font-family: "Noto Sans Display", sans-serif;
 }
@@ -17,10 +17,18 @@ body {
 }
 .btn {
   font-size: 1.7rem;
-}
-.form-select {
-  font-size: 1.7rem;
+  color: map-get($colors, color-blue);
+  font-weight: 500;
 }
 .form-control {
-  font-size: 1.7rem;
+  @extend .btn;
+}
+.form-select {
+  @extend .btn;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  color: map-get($colors, color-blue);
 }
