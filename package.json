@@ -1,9 +1,10 @@
 {
   "name": "hotel-patagonia",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "sass --watch scss/style.scss css/style.css"
+    "compile:sass": "sass --watch scss:css"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,7 @@
     "url": "https://github.com/anaayalak/Hotel-Patagonia/issues"
   },
   "homepage": "https://github.com/anaayalak/Hotel-Patagonia#readme",
-  "description": ""
+  "dependencies": {
+    "bootstrap": "^5.2.0"
+  }
 }

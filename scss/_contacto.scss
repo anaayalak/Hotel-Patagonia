@@ -1,11 +1,19 @@
 .form-contact {
-  border: 0.5rem solid rgba(0, 0, 0, 0.315);
+background-color:#929c8b8f ;
+ }
+.whatsapp {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:4rem;
+    z-index:100;
 }
-.wsp-img {
-  width: 10%;
-  height: 10%;
-}
-.wsp-container {
-  margin-top: 2rem;
-  font-weight: bold;
-}
+.whatsapp-icon {
+    margin-top:13px;
+  }

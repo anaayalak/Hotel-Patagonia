@@ -1,34 +1,21 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  font-size: 62.5%;
+    font-size: 62.5%;
 }
-body {
-  background-color: map-get($colors, color-grey);
-  font-size: 1.7rem;
-  font-family: "Noto Sans Display", sans-serif;
-}
-.navbar-brand {
-  font-size: 2.5rem;
-}
-.btn {
-  font-size: 1.7rem;
-  color: map-get($colors, color-blue);
-  font-weight: 500;
-}
-.form-control {
-  @extend .btn;
-}
-.form-select {
-  @extend .btn;
+body{ font-family: $font-family-base;}
+
+.navbar {
+    background-color: $dark;
+    margin-bottom: 2rem;
 }
 
-h1 {
-  text-align: center;
-  font-weight: bold;
-  color: map-get($colors, color-blue);
+main {
+    max-width: 1380px;
 }
+h1 {text-align: center;
+    color: $dark;}
