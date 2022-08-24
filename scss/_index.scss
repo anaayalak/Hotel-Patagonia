@@ -1,22 +1,26 @@
 .booking-container {
     border: 0.2rem solid rgba(0, 0, 0, 0.251);
     background-color: #929c8b;
-    margin-bottom:  3rem;
+    margin-bottom: 3rem;
     padding: 1rem;
     color: white;
 }
-.index-title{
+
+.index-title {
     font-family: 'Aboreto', cursive;
-    font-weight: bold;;
+    font-weight: bold;
+    ;
     font-size: 4rem;
     color: $dark;
     text-align: center;
 }
-.text-carousel{ 
+
+.text-carousel {
     font-size: 2rem;
     font-style: italic;
 }
-.title-reserva { 
+
+.title-reserva {
     font-size: 2rem;
     color: $dark;
     text-align: center;
